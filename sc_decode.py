@@ -332,7 +332,7 @@ def sprite_dump(filein):
             
             #debug: save sprite components
             #tmpRegion.save(pathout + '/' + filein + '_sprite_dbg_' + str(x) + '_' + str(y) + '
-            ')
+           
             
             #align the zeroes
             pasteLeft = spriteglobals['GlobalZeroX'] - spritedata[x]['Regions'][y]['RegionZeroX']
