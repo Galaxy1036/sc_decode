@@ -137,7 +137,7 @@ def sprite_dump(filein):
             stringlen,  = struct.unpack('<B',  bytes(data[i:i+1]))
             i += (stringlen + 1)
         tmpvar,  = struct.unpack('<B',  bytes(data[i:i+1]))
-        if  (tmpvar  == 0x17):
+        if  (tmpvar  == 0x17 or tmpvar == 0x1e):
             i += 5
         tmpvar,  = struct.unpack('<B',  bytes(data[i:i+1]))
         if (tmpvar  == 0x1A):
@@ -331,7 +331,8 @@ def sprite_dump(filein):
             tmpRegion = tmpRegion.rotate(spritedata[x]['Regions'][y]['Rotation'],  expand=True)
             
             #debug: save sprite components
-            #tmpRegion.save(pathout + '/' + filein + '_sprite_dbg_' + str(x) + '_' + str(y) + '.png')
+            #tmpRegion.save(pathout + '/' + filein + '_sprite_dbg_' + str(x) + '_' + str(y) + '
+            ')
             
             #align the zeroes
             pasteLeft = spriteglobals['GlobalZeroX'] - spritedata[x]['Regions'][y]['RegionZeroX']
