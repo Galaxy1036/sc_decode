@@ -1,4 +1,7 @@
 # sc_decode
+
+Fixed this version for highres_tex , you can get all highres using my assets downloader (https://github.com/Galaxy1036/Sc-Assets-Downloader)
+Just rename *highres_tex.png to *_tex.png
 An effort to reverse-engineer .sc sprite maps.
 
 Usage: 
